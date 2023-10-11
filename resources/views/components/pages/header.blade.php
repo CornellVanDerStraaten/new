@@ -3,17 +3,17 @@
         <div class="flex lg:flex-1">
             <a href="#" class="-m-1.5 p-1.5">
                 <span class="sr-only">Your Company</span>
-                <span class="text-4xl text-secondary font-bold">GG</span>
+                <span class="text-4xl text-secondary font-bold">GoalGuardian</span>
             </a>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
-            <a href="#" class="text-sm leading-6 text-gray-900">Home</a>
-            <a href="#" class="text-sm leading-6 text-gray-900">Features</a>
-            <a href="#" class="text-sm leading-6 text-gray-900">Marketplace</a>
-            <a href="#" class="text-sm leading-6 text-gray-900">Company</a>
+            <a href="#" class="text-sm leading-6 text-gray-900 hover:text-gray-600">Home</a>
+            <a href="#" class="text-sm leading-6 text-gray-900 hover:text-gray-600">Features</a>
+            <a href="#" class="text-sm leading-6 text-gray-900 hover:text-gray-600">Pricing</a>
+            <a href="#" class="text-sm leading-6 text-gray-900 hover:text-gray-600">Contact</a>
         </div>
         <div class="flex flex-1 items-center justify-end gap-x-6">
-            <a href="#" class="hidden lg:block lg:text-sm lg:font-semibold lg:leading-6 lg:text-gray-900">Log in</a>
+            <a href="#" class="hidden lg:block lg:text-sm lg:leading-6 lg:text-gray-900">Log in</a>
             <a href="#" class="rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Sign up</a>
         </div>
         <div class="flex lg:hidden">
