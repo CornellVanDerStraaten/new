@@ -13,6 +13,15 @@ export default {
 
     theme: {
         extend: {
+            colors: {
+                // Add your custom colors here
+                'primary': '#FF5733',
+                'primary-dark': '#c63d20',
+                'primary-light': '#FF5733',
+                'secondary': '#1E90FF',
+                'secondary-light': '#1E90FF',
+                'secondary-dark': '#1E90FF',
+            },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
