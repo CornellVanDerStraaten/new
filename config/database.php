@@ -56,9 +56,9 @@ return array(
                 'mysql' => array(
                         'driver'    => 'mysql',
                         'host'      => 'localhost',
-                        'database'  => 'affqgugvgu',
-                        'username'  => 'affqgugvgu',
-                        'password'  => 'Nms2x9hgcM',
+                        'database'  => env('DB_DATABASE'),
+                        'username'  => env('DB_USERNAME'),
+                        'password'  => env('DB_PASSWORD'),
                         'charset'   => 'utf8',
                         'collation' => 'utf8_unicode_ci',
                         'prefix'    => '',
