@@ -52,14 +52,14 @@
         </div>
 
 {{--    STEPS    --}}
-        <div class="bg-white py-24 sm:py-32">
+        <div class="bg-white py-12 sm:py-24">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900 mb-6">Frequently asked questions</h2>
+                <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900 mb-6">The process</h2>
 
                 <div class="mx-auto grid max-w-2xl grid-cols-1 gap-8 overflow-hidden lg:mx-0 lg:max-w-none lg:grid-cols-4">
 
                     <div>
-                        <time datetime="2021-08" class="flex items-center text-sm font-semibold leading-6 text-indigo-600">
+                        <time datetime="2021-08" class="flex items-center text-sm font-semibold leading-6 text-primary">
                             <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
                                 <circle cx="2" cy="2" r="2" fill="currentColor" />
                             </svg>
@@ -70,7 +70,7 @@
                         <p class="mt-1 text-base leading-7 text-gray-600">Nihil aut nam. Dignissimos a pariatur et quos omnis. Aspernatur asperiores et dolorem dolorem optio voluptate repudiandae.</p>
                     </div>
                     <div>
-                        <time datetime="2021-12" class="flex items-center text-sm font-semibold leading-6 text-indigo-600">
+                        <time datetime="2021-12" class="flex items-center text-sm font-semibold leading-6 text-primary">
                             <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
                                 <circle cx="2" cy="2" r="2" fill="currentColor" />
                             </svg>
@@ -81,7 +81,7 @@
                         <p class="mt-1 text-base leading-7 text-gray-600">Provident quia ut esse. Vero vel eos repudiandae aspernatur. Cumque minima impedit sapiente a architecto nihil.</p>
                     </div>
                     <div>
-                        <time datetime="2022-02" class="flex items-center text-sm font-semibold leading-6 text-indigo-600">
+                        <time datetime="2022-02" class="flex items-center text-sm font-semibold leading-6 text-primary">
                             <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
                                 <circle cx="2" cy="2" r="2" fill="currentColor" />
                             </svg>
@@ -92,7 +92,7 @@
                         <p class="mt-1 text-base leading-7 text-gray-600">Sunt perspiciatis incidunt. Non necessitatibus aliquid. Consequatur ut officiis earum eum quia facilis. Hic deleniti dolorem quia et.</p>
                     </div>
                     <div>
-                        <time datetime="2022-12" class="flex items-center text-sm font-semibold leading-6 text-indigo-600">
+                        <time datetime="2022-12" class="flex items-center text-sm font-semibold leading-6 text-primary">
                             <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
                                 <circle cx="2" cy="2" r="2" fill="currentColor" />
                             </svg>
@@ -106,14 +106,13 @@
             </div>
         </div>
 
-
-
         {{--    FAQ    --}}
         <div class="bg-white">
-            <div class="mx-auto max-w-7xl px-6 py-12 sm:py-24 lg:px-8 lg:py-24">
-                <div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
-                    <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
-                    <dl class="mt-10 space-y-6 divide-y divide-gray-900/10">
+            <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
+                <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
+                <p class="mt-6 max-w-2xl text-base leading-7 text-gray-600">Have a different question and can’t find the answer you’re looking for? Reach out to our support team by <a href="#" class="font-semibold text-primary hover:text-primary-dark">sending us an email</a> and we’ll get back to you as soon as we can.</p>
+                <div class="mt-20">
+                    <dl class="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:grid-cols-3 lg:gap-x-10">
                         <x-faq-item>
                             <x-slot:question>
                                 Will I ever get spammed by this service?
@@ -121,7 +120,34 @@
 
                             Our intention is to be as unintrusive as possible. We only send one email each month unless you want or need more!
                         </x-faq-item>
+                        <x-faq-item>
+                            <x-slot:question>
+                                How many goals can I track?
+                            </x-slot:question>
 
+                            You can track as many goals as you want! The email we send each month summarizes all goals you have and let's you easily and quickly answer each one.
+                        </x-faq-item>
+                        <x-faq-item>
+                            <x-slot:question>
+                                How many goals can I track?
+                            </x-slot:question>
+
+                            You can track as many goals as you want! The email we send each month summarizes all goals you have and let's you easily and quickly answer each one.
+                        </x-faq-item>
+                        <x-faq-item>
+                            <x-slot:question>
+                                How many goals can I track?
+                            </x-slot:question>
+
+                            You can track as many goals as you want! The email we send each month summarizes all goals you have and let's you easily and quickly answer each one.
+                        </x-faq-item>
+                        <x-faq-item>
+                            <x-slot:question>
+                                How many goals can I track?
+                            </x-slot:question>
+
+                            You can track as many goals as you want! The email we send each month summarizes all goals you have and let's you easily and quickly answer each one.
+                        </x-faq-item>
                         <x-faq-item>
                             <x-slot:question>
                                 How many goals can I track?
@@ -130,20 +156,13 @@
                             You can track as many goals as you want! The email we send each month summarizes all goals you have and let's you easily and quickly answer each one.
                         </x-faq-item>
 
+                        <!-- More questions... -->
                     </dl>
                 </div>
             </div>
         </div>
-
     </main>
 
-    {{--    <div class="py-12">--}}
-    {{--        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">--}}
-    {{--            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">--}}
-
-
-    {{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
+    <x-pages.footer/>
 </x-guest-layout>
 

@@ -1,20 +1,20 @@
 <header class="bg-white" x-data="{menuOpen: false}">
     <nav class="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
-            <a href="#" class="-m-1.5 p-1.5">
+            <a href="{{ route('home') }}" class="-m-1.5 p-1.5">
                 <span class="sr-only">Your Company</span>
                 <span class="text-4xl text-secondary font-bold">GoalGuardian</span>
             </a>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
-            <a href="#" class="text-sm leading-6 text-gray-900 hover:text-gray-600">Home</a>
+            <a href="{{ route('home') }}" class="text-sm leading-6 text-gray-900 hover:text-gray-600">Home</a>
             <a href="#" class="text-sm leading-6 text-gray-900 hover:text-gray-600">Features</a>
             <a href="#" class="text-sm leading-6 text-gray-900 hover:text-gray-600">Pricing</a>
             <a href="#" class="text-sm leading-6 text-gray-900 hover:text-gray-600">Contact</a>
         </div>
         <div class="flex flex-1 items-center justify-end gap-x-6">
-            <a href="#" class="hidden lg:block lg:text-sm lg:leading-6 lg:text-gray-900">Log in</a>
-            <a href="#" class="rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Sign up</a>
+            <a href="{{ route('login') }}" class="hidden lg:block lg:text-sm lg:leading-6 lg:text-gray-900">Log in</a>
+            <a href="{{ route('register') }}" class="rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Sign up</a>
         </div>
         <div class="flex lg:hidden">
             <button type="button" @click="menuOpen = true" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
@@ -53,13 +53,13 @@
             <div class="mt-6 flow-root">
                 <div class="-my-6 divide-y divide-gray-500/10">
                     <div class="space-y-2 py-6">
-                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a>
+                        <a href="{{ route('home') }}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a>
                         <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
                         <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
                         <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
                     </div>
                     <div class="py-6">
-                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
+                        <a href="{{ route('login') }}" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
                     </div>
                 </div>
             </div>

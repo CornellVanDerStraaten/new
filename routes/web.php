@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [WebsiteController::class, 'home']);
+Route::get('/', [WebsiteController::class, 'home'])->name('home');
 
 Route::middleware([
     'auth:sanctum',
