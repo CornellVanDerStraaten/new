@@ -1,9 +1,9 @@
-<header class="bg-white" x-data="{menuOpen: false}">
+<header class="bg-white h-[88px]" x-data="{menuOpen: false}">
     <nav class="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
             <a href="{{ route('home') }}" class="-m-1.5 p-1.5">
                 <span class="sr-only">Your Company</span>
-                <span class="text-4xl text-secondary font-bold">GoalGuardian</span>
+                <span class="text-4xl text-primary font-bold">Goal Guardian</span>
             </a>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
@@ -12,15 +12,27 @@
             <a href="#" class="text-sm leading-6 text-gray-900 hover:text-gray-600">Pricing</a>
             <a href="#" class="text-sm leading-6 text-gray-900 hover:text-gray-600">Contact</a>
         </div>
+        @if(auth()->user())
+            <div class="flex flex-1 items-center justify-end gap-x-6">
+                <form method="POST" action="{{ route('logout') }}" x-data>
+                    @csrf
+
+                    <a href="{{ route('logout') }}" @click.prevent="$root.submit()" class="block px-3 py-1 text-sm leading-6 text-gray-900" role="menuitem" tabindex="-1"
+                       id="user-menu-item-1">Sign out</a>
+                </form>
+                <a href="{{ route('dashboard') }}" class="rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">To Dashboard</a>
+            </div>
+        @else
         <div class="flex flex-1 items-center justify-end gap-x-6">
             <a href="{{ route('login') }}" class="hidden lg:block lg:text-sm lg:leading-6 lg:text-gray-900">Log in</a>
             <a href="{{ route('register') }}" class="rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Sign up</a>
         </div>
+        @endif
         <div class="flex lg:hidden">
             <button type="button" @click="menuOpen = true" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
                 <span class="sr-only">Open main menu</span>
                 <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3. 75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
             </button>
         </div>

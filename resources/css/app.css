@@ -5,3 +5,16 @@
 [x-cloak] {
     display: none;
 }
+
+.screen-minus-header {
+    min-height: calc(100vh - 88px);
+}
+
+.screen-minus-dashboard-header {
+    min-height: calc(100vh - 70px);
+    margin-top: 70px;
+}
+
+[x-cloak] { display: none !important; }
+
+
