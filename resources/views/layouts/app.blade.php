@@ -24,6 +24,10 @@
 
             <x-dashboard.nav />
 
+            @isset($breadcrumbs)
+                {{ $breadcrumbs }}
+            @endisset
+
             <main>
                 {{ $slot }}
             </main>
