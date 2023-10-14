@@ -10,7 +10,7 @@
         ecosystem to be a breath of fresh air. We hope you love it.
     </p>
 
-    @if(auth()->user())
+    @if(auth()->user()->goals()->count() == 0)
         <div class="w-full mt-4 text-right">
             <a href="{{ route('goals.create') }}" class="inline-flex items-center font-semibold text-primary">
                 Create your first goal

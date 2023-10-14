@@ -14,7 +14,7 @@ class GoalController extends Controller
      */
     public function index()
     {
-        return view('dashboard', [
+        return view('dashboard.goals.index', [
             'breadcrumbs' => Breadcrumbs::render('goals')
         ]);
     }

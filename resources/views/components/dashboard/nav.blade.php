@@ -1,4 +1,4 @@
-<header class="absolute inset-x-0 top-0 z-50 flex h-16 border-b border-gray-900/10 bg-white font-sans h-[70px]" x-data="{mobileMenuOpened: false}">
+<header class="absolute inset-x-0 top-0 flex h-16 border-b border-gray-900/10 bg-white font-sans h-[70px]" x-data="{mobileMenuOpened: false}">
     <div class="mx-auto flex w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <div class="flex sm:flex-1 flex-2 items-center gap-x-6">
             <button type="button" class="-m-3 p-3 md:hidden" @click="mobileMenuOpened = true">
