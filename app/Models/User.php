@@ -62,6 +62,16 @@ class User extends Authenticatable
     ];
 
     /**
+     * Get the goals of this user
+     *
+     * @return HasMany
+     */
+    public function goals(): HasMany
+    {
+        return $this->hasMany(Goal::class);
+    }
+
+    /**
      * @return string
      */
     public function getFullName(): string
