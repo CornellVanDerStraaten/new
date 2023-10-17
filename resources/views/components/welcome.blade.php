@@ -12,7 +12,7 @@
 
     @if(auth()->user()->goals()->count() == 0)
         <div class="w-full mt-4 text-right">
-            <a href="{{ route('goals.create') }}" class="inline-flex items-center font-semibold text-primary">
+            <a href="{{ route('goals.index') }}" class="inline-flex items-center font-semibold text-primary">
                 Create your first goal
 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="ml-1 w-5 h-5 fill-primary">

@@ -40,7 +40,10 @@ class GoalController extends Controller
      */
     public function show(Goal $goal)
     {
-        //
+        return view('dashboard.goals.show', [
+            'breadcrumbs' => Breadcrumbs::render('goals.show', $goal),
+            'goal' => $goal
+        ]);
     }
 
     /**
@@ -64,6 +67,8 @@ class GoalController extends Controller
      */
     public function destroy(Goal $goal)
     {
-        //
+        $goal->delete();
+
+        return;
     }
 }

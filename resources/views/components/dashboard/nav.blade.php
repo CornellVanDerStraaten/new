@@ -13,7 +13,7 @@
         </div>
         <nav class="hidden items-center h-full md:flex md:gap-x-11 md:text-sm md:font-semibold md:leading-6 md:text-gray-700">
             <a href="{{ route('dashboard') }}" class="h-full flex items-center hover:bg-gray-50 p-2 @if(request()->routeIs('dashboard')) bg-gray-100 border-b-4 border-primary-dark @endif " ><span>Dashboard</span></a>
-            <a href="{{ route('goals.index') }}" class="h-full flex items-center hover:bg-gray-50 p-2 @if(request()->routeIs('goals.index')) bg-gray-100 border-b-4 border-primary-dark @endif " ><span>Goals</span></a>
+            <a href="{{ route('goals.index') }}" class="h-full flex items-center hover:bg-gray-50 p-2 @if(str_contains(request()->path(), 'goals')) bg-gray-100 border-b-4 border-primary-dark @endif " ><span>Goals</span></a>
 {{--            <a href="{{ route('progress.reports') }}" class="h-full flex items-center hover:bg-gray-50 p-2 @if(request()->routeIs('progress.reports')) bg-gray-100 border-b-4 border-primary-dark @endif " ><span>Progress Reports</span></a>--}}
         </nav>
         <div class="flex flex-1 items-center justify-end gap-x-8">
