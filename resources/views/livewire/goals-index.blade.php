@@ -43,7 +43,7 @@
             </svg>
 
             <h3 class="mt-2 text-sm font-semibold text-gray-900">No goals</h3>
-            <p class="mt-1 text-sm text-gray-500">Get started on your jorney by creating a new goal!</p>
+            <p class="mt-1 text-sm text-gray-500">Start achieving your goals!</p>
             <div class="mt-6 pb-4">
                 <x-button wire:click="$dispatch('openModal', { component: 'goal-create-modal' })" wire:loading.attr="disabled">
                     <svg class="-ml-0.5 mr-1.5 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
