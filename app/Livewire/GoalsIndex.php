@@ -14,7 +14,7 @@ class GoalsIndex extends Component
     #[On('goal-created')]
     public function retrieveGoals()
     {
-        $this->goals = Goal::query()->where('user_id', auth()->id())->get();
+        $this->goals = Goal::ofCurrentUser()->get();
     }
 
     public function mount()

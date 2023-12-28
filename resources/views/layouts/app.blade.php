@@ -28,7 +28,7 @@
                 {{ $breadcrumbs }}
             @endisset
 
-            <main>
+            <main class="m-1">
                 {{ $slot }}
             </main>
         </div>

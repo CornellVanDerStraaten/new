@@ -25,6 +25,13 @@ Breadcrumbs::for('goals.show', function (BreadcrumbTrail $trail, Goal $goal) {
     $trail->push($goal->name, route('goals.show', $goal));
 });
 
+// Dashboard > Goals > Question Edit
+Breadcrumbs::for('goals.questions', function (BreadcrumbTrail $trail, Goal $goal) {
+    $trail->parent('goals');
+    $trail->push($goal->name, route('goals.show', $goal));
+    $trail->push('Edit Report Questions', route('goals.questions', $goal));
+});
+
 // Profile
 Breadcrumbs::for('profile', function (BreadcrumbTrail $trail) {
     $trail->push('Profile', route('profile.show'));

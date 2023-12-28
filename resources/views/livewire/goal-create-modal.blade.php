@@ -6,8 +6,9 @@
         <div class="pb-4">
             <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Name</label>
             <div class="mt-2">
-                <input type="text" wire:model="name" name="name" id="name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6" placeholder="Able to run the 10km marathon">
+                <input type="text" wire:model="name" name="name" id="name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 @error('name') ring-red-500 focus:ring-red-500 @enderror" placeholder="Able to run the 10km marathon">
             </div>
+            @error('name') <span class="error text-red-500 pt-1">{{ $message }}</span> @enderror
         </div>
         <fieldset>
             <legend class="sr-only">Include in progress report email</legend>

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\GoalController;
+use App\Http\Controllers\Goals\ReportQuestionsController;
 use App\Http\Controllers\WebsiteController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,9 +23,11 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+    Route::get('/dashboard', [WebsiteController::class, 'dashboard'])->name('dashboard');
 
     Route::resource('goals', GoalController::class);
+    Route::group(['prefix' => 'goals/{goal}'], function () {
+        Route::get('/questions', [ReportQuestionsController::class, 'edit'])->name('goals.questions');
+        Route::put('/questions', [ReportQuestionsController::class, 'update']);
+    });
 });

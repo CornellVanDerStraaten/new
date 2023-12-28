@@ -6,12 +6,6 @@
                 <span class="text-4xl text-primary font-bold">Goal Guardian</span>
             </a>
         </div>
-        <div class="hidden lg:flex lg:gap-x-12">
-            <a href="{{ route('home') }}" class="text-sm leading-6 text-gray-900 hover:text-gray-600">Home</a>
-            <a href="#" class="text-sm leading-6 text-gray-900 hover:text-gray-600">Features</a>
-            <a href="#" class="text-sm leading-6 text-gray-900 hover:text-gray-600">Pricing</a>
-            <a href="#" class="text-sm leading-6 text-gray-900 hover:text-gray-600">Contact</a>
-        </div>
         @if(auth()->user())
             <div class="flex flex-1 items-center justify-end gap-x-6">
                 <form method="POST" action="{{ route('logout') }}" x-data>

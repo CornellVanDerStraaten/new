@@ -13,8 +13,14 @@ class GoalCreateModal extends ModalComponent
     public bool $active = true;
     public bool $saving = false;
 
+    protected $rules = [
+        'name' => 'required',
+    ];
+
     public function save()
     {
+        $this->validate();
+
         $this->saving = true;
 
         $goal = Goal::create([
@@ -22,6 +28,8 @@ class GoalCreateModal extends ModalComponent
             'user_id' => auth()->id(),
             'active' => $this->active
         ]);
+
+        $goal->assignDefaultQuestions();
 
         $this->dispatch('goal-created')->to(GoalsIndex::class);
         $this->closeModal();

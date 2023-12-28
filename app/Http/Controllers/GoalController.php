@@ -42,7 +42,7 @@ class GoalController extends Controller
     {
         return view('dashboard.goals.show', [
             'breadcrumbs' => Breadcrumbs::render('goals.show', $goal),
-            'goal' => $goal
+            'goal' => $goal,
         ]);
     }
 
